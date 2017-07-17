@@ -1,0 +1,9 @@
+<ul class="people_list">
+  {{#each birthday }}
+    <li>{{this.name}}</li>
+    <li>{{this.date}}</li>
+    <a href="/birthday/delete/{{ _id }}">Delete</a>
+    <a href="/birthday/show/{{ _id}}">View Details</a>
+  {{/each}}
+</ul>
+  <a href="/birthday/new">Add New Birthday</a>
